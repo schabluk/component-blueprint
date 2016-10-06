@@ -1,6 +1,6 @@
 {
   "name": "component-blueprint",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Component Blueprint",
   "main": "./dist/bundle.js",
   "scripts": {
