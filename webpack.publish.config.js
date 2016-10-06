@@ -6,7 +6,7 @@ const PATHS = {
 }
 
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: "./src/components/Hello.tsx",
   output: {
     filename: "index.js",
     publicPath: '/'
