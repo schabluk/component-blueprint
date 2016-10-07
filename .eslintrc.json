@@ -4,7 +4,6 @@
         "commonjs": true,
         "es6": true
     },
-    "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
@@ -12,9 +11,8 @@
         },
         "sourceType": "module"
     },
-    "plugins": [
-        "react"
-    ],
+    "plugins": ["react"],
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
     "rules": {
         "indent": [
             "error",
@@ -32,6 +30,6 @@
             "error",
             "always"
         ],
-        "no-unused-vars": [1] // only warn, because of import React in JSX files.
+        "react/prop-types": [0] /* Props destructing in SFC */
     }
 }
