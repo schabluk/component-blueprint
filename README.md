@@ -2,15 +2,14 @@
 #### Install and Setup
 Install TypeScript globally.
 ```
-npm i -g typescript typings
+npm i -g typescript@2.0
 ```
 Clone the repository and install dependencies.
 ```
 git clone https://github.com/schabluk/component-blueprint.git
 cd component-blueprint
-npm install
 npm link typescript
-typings install
+npm install
 ```
 #### Running and building
 To start in development mode with HRM:
