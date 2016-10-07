@@ -1,13 +1,4 @@
-.DS_STORE
-dist
-node_modules
-src
-typings
-.eslintignore
-.eslintrc.json
-.gitignore
-tsconfig.json
-tslint.json
-typings.json
-*.log*
-webpack.*
+*
+!dist/**/*
+!package.json
+!*.md

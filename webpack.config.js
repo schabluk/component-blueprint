@@ -1,5 +1,4 @@
 const path = require('path')
-// const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const PATHS = {
@@ -8,11 +7,10 @@ const PATHS = {
 }
 
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: "./src/webapp.tsx",
   output: {
     path: PATHS.build,
-    filename: "bundle.js",
-    publicPath: '/'
+    filename: "bundle.js"
   },
   resolve: {
     extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js", ".jsx", ".scss"]
@@ -27,8 +25,7 @@ module.exports = {
       { test: /\.tsx?$/, loader: "ts-loader", include: PATHS.app },
       {
         test: /\.jsx?$/,
-        loader: 'babel',
-        // loaders: ['babel?cacheDirectory'],
+        loader: 'babel', // loaders: ['babel?cacheDirectory'],
         query: {
           cacheDirectory: true,
           plugins: ['transform-runtime', 'transform-decorators-legacy'],
@@ -50,7 +47,6 @@ module.exports = {
       /* eslint-enable */
     ]
   },
-  // Enable sourcemaps for debugging webpack's output.
   devtool: "source-map",
   devServer: {
     // Enable history API fallback so HTML5 History API based

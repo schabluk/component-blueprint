@@ -1,16 +1,26 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist/",
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "commonjs",
-        "target": "es5",
-        "jsx": "react",
-        "allowJs": true
-    },
-    "files": [
-        "./typings/index.d.ts",
-        "./src/components/Hello.tsx",
-        "./src/index.tsx"
+  "compilerOptions": {
+    "declaration": false,
+    "rootDir": ".",
+    "outDir": "dist",
+    "sourceMap": true,
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react",
+    "allowJs": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "@types/react",
+      "@types/react-dom"
     ]
+  },
+  "compileOnSave": false,
+  "files": [
+    "./src/main.ts"
+  ],
+  "exclude": [
+    "node_modules", "dist"
+  ]
 }
