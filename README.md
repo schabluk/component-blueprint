@@ -23,6 +23,8 @@ npm run build
 To release for publication in NPM:
 ```
 npm run release
+npm version patch
+npm publish
 ```
 To release minified production bundle:
 ```
