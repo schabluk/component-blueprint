@@ -28,3 +28,12 @@ To release minified production bundle:
 ```
 npm run relmini
 ```
+To release and install locally:
+```
+npm pack
+> component-blueprint-1.0.7.tgz
+```
+From project directory:
+```
+npm install /path/to/component-blueprint-1.0.7.tgz
+```
