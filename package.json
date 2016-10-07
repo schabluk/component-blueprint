@@ -1,6 +1,6 @@
 {
   "name": "component-blueprint",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Component Blueprint",
   "main": "dist/main.js",
   "scripts": {
